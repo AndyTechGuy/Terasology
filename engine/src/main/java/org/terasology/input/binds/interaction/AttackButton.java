@@ -23,6 +23,7 @@ import org.terasology.input.InputType;
 import org.terasology.input.RegisterBindButton;
 
 /**
+ * Input event for attacking and object manipulation (attacking, breaking blocks, etc...).
  */
 @RegisterBindButton(id = "attack", description = "${engine:menu#binding-attack}", repeating = true)
 @DefaultBinding(type = InputType.MOUSE_BUTTON, id = 0)

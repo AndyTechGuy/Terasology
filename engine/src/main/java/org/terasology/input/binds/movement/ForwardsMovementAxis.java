@@ -21,6 +21,7 @@ import org.terasology.input.RegisterBindAxis;
 import org.terasology.input.SendEventMode;
 
 /**
+ * Axis event to move the player forwards and backwards.
  */
 @RegisterBindAxis(id = "forwardsMovement", positiveButton = "engine:forwards", negativeButton = "engine:backwards", eventMode = SendEventMode.WHEN_CHANGED)
 public class ForwardsMovementAxis extends BindAxisEvent {

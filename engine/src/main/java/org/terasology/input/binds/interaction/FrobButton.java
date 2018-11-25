@@ -24,6 +24,7 @@ import org.terasology.input.Keyboard;
 import org.terasology.input.RegisterBindButton;
 
 /**
+ * Input event for block activation/manipulation.
  */
 @RegisterBindButton(id = "frob", description = "${engine:menu#binding-frob}")
 @DefaultBinding(type = InputType.KEY, id = Keyboard.KeyId.E)

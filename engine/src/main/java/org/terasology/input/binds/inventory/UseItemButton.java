@@ -23,6 +23,7 @@ import org.terasology.input.RegisterBindButton;
 import org.terasology.input.ControllerId;
 
 /**
+ * Input event for use of a player's currently held item.
  */
 @RegisterBindButton(id = "useItem", description = "${engine:menu#binding-use-item}", repeating = true, category = "interaction")
 @DefaultBinding(type = InputType.MOUSE_BUTTON, id = 1)

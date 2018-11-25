@@ -22,6 +22,7 @@ import org.terasology.input.Keyboard;
 import org.terasology.input.RegisterBindButton;
 
 /**
+ * Keybind event for toggling the crouched & standing states (crouch button would instead make the player stand).
  */
 @RegisterBindButton(id = "crouchMode", description = "${engine:menu#binding-crouch-mode}")
 @DefaultBinding(type = InputType.KEY, id = Keyboard.KeyId.X)

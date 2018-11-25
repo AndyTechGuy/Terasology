@@ -22,6 +22,7 @@ import org.terasology.input.Keyboard;
 import org.terasology.input.RegisterBindButton;
 
 /**
+ * Keybind event for toggling the display of the game's HUD (through {@link org.terasology.logic.players.DebugControlSystem}).
  */
 @RegisterBindButton(id = "hideHUD", description = "${engine:menu#binding-hide-hud}", category = "general")
 @DefaultBinding(type = InputType.KEY, id = Keyboard.KeyId.H)

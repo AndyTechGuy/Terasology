@@ -24,7 +24,7 @@ import org.terasology.input.RegisterRealBindAxis;
 import org.terasology.input.SendEventMode;
 
 /**
- * Relates to the vertical screen axis, i.e. look up/down.
+ * Axis event that relates to the vertical screen axis, i.e. look up/down.
  */
 @RegisterRealBindAxis(id = "rotationPitch", eventMode = SendEventMode.WHEN_NON_ZERO)
 @DefaultBinding(type = InputType.CONTROLLER_AXIS, id = ControllerId.RY_AXIS)

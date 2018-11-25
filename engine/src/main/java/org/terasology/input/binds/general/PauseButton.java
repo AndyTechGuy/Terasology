@@ -23,6 +23,9 @@ import org.terasology.input.InputType;
 import org.terasology.input.Keyboard;
 import org.terasology.input.RegisterBindButton;
 
+/**
+ * Keybind event for pausing the game for the player (through {@link org.terasology.logic.players.MenuControlSystem}).
+ */
 @RegisterBindButton(id = "pause", description = "${engine:menu#binding-pause}", category = "general")
 @DefaultBinding(type = InputType.KEY, id = Keyboard.KeyId.ESCAPE)
 @DefaultBinding(type = InputType.CONTROLLER_BUTTON, id = ControllerId.SEVEN)  // Button 9 for PlayStation Controllers

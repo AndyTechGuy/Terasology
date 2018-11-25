@@ -23,6 +23,7 @@ import org.terasology.input.Keyboard;
 import org.terasology.input.RegisterBindButton;
 
 /**
+ * Keybind event for toggling speed, where the speed change will revert when the key is released.
  */
 @RegisterBindButton(id = "toggleSpeedTemporarily", description = "${engine:menu#binding-toggle-speed-temporarily}")
 @DefaultBinding(type = InputType.KEY, id = Keyboard.KeyId.LEFT_SHIFT)

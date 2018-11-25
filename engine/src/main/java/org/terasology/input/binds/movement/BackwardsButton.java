@@ -23,6 +23,7 @@ import org.terasology.input.Keyboard;
 import org.terasology.input.RegisterBindButton;
 
 /**
+ * Keybind event for the player to walk backwards.
  */
 @RegisterBindButton(id = "backwards", description = "${engine:menu#binding-backwards}")
 @DefaultBinding(type = InputType.KEY, id = Keyboard.KeyId.S)

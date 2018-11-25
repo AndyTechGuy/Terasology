@@ -24,6 +24,7 @@ import org.terasology.input.RegisterRealBindAxis;
 import org.terasology.input.SendEventMode;
 
 /**
+ * Axis event for controller, for making the player jump and crouch.
  */
 @RegisterRealBindAxis(id = "verticalRealMovement", eventMode = SendEventMode.WHEN_CHANGED)
 @DefaultBinding(type = InputType.CONTROLLER_AXIS, id = ControllerId.Z_AXIS)

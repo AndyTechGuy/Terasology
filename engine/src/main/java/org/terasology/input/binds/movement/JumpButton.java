@@ -24,6 +24,7 @@ import org.terasology.input.Keyboard;
 import org.terasology.input.RegisterBindButton;
 
 /**
+ * Keybind event to make the player jump.
  */
 @RegisterBindButton(id = "jump", description = "${engine:menu#binding-jump}", repeating = false)
 @DefaultBinding(type = InputType.KEY, id = Keyboard.KeyId.SPACE)

@@ -21,6 +21,9 @@ import org.terasology.input.InputType;
 import org.terasology.input.Keyboard;
 import org.terasology.input.RegisterBindButton;
 
+/**
+ * Keybind event for toggling the display of the online player list (through {@link org.terasology.logic.players.MenuControlSystem}).
+ */
 @RegisterBindButton(id = "showOnlinePlayers", description = "${engine:menu#binding-show-online-players}", category = "general")
 @DefaultBinding(type = InputType.KEY, id = Keyboard.KeyId.TAB)
 public class OnlinePlayersButton extends BindButtonEvent {

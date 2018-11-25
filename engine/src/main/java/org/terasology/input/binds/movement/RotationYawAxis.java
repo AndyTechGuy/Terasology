@@ -24,7 +24,7 @@ import org.terasology.input.RegisterRealBindAxis;
 import org.terasology.input.SendEventMode;
 
 /**
- * Relates to the horizontal screen axis, i.e. look left/right.
+ * Axis event that relates to the horizontal screen axis, i.e. look left/right.
  */
 @RegisterRealBindAxis(id = "rotationYaw", eventMode = SendEventMode.WHEN_NON_ZERO)
 @DefaultBinding(type = InputType.CONTROLLER_AXIS, id = ControllerId.RX_AXIS)

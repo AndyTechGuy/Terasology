@@ -23,6 +23,7 @@ import org.terasology.input.Keyboard;
 import org.terasology.input.RegisterBindButton;
 
 /**
+ * Keybind event for toggling speed, where the speed change will remain when the key is released.
  */
 @RegisterBindButton(id = "toggleSpeedPermanently", description = "${engine:menu#binding-toggle-speed-permanently}")
 @DefaultBinding(type = InputType.KEY, id = Keyboard.KeyId.CAPS_LOCK)

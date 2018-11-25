@@ -22,6 +22,9 @@ import org.terasology.input.InputType;
 import org.terasology.input.Keyboard;
 import org.terasology.input.RegisterBindButton;
 
+/**
+ * Keybind event for taking a screenshot (through {@link org.terasology.logic.players.MenuControlSystem}).
+ */
 @RegisterBindButton(id = "screenshot", description = "${engine:menu#binding-screenshot}", category = "general")
 @DefaultBinding(type = InputType.KEY, id = Keyboard.KeyId.F12)
 public class ScreenshotButton extends BindButtonEvent {

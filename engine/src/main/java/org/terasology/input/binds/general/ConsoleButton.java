@@ -23,6 +23,7 @@ import org.terasology.input.Keyboard;
 import org.terasology.input.RegisterBindButton;
 
 /**
+ * Keybind event for toggling the display of the Console (through {@link org.terasology.logic.console.ConsoleSystem}).
  */
 @RegisterBindButton(id = "console", description = "${engine:menu#binding-console}", category = "general")
 @DefaultBinding(type = InputType.KEY, id = Keyboard.KeyId.GRAVE)

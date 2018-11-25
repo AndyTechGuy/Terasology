@@ -21,6 +21,9 @@ import org.terasology.input.InputType;
 import org.terasology.input.Keyboard;
 import org.terasology.input.RegisterBindButton;
 
+/**
+ * Keybind event for the player to automatically move forward.
+ */
 @RegisterBindButton(id = "autoMoveMode", description = "${engine:menu#binding-autoMove-mode}")
 @DefaultBinding(id = Keyboard.KeyId.R, type = InputType.KEY)
 public class AutoMoveButton extends BindButtonEvent {

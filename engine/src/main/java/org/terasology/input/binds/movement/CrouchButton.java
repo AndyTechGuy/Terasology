@@ -23,6 +23,7 @@ import org.terasology.input.Keyboard;
 import org.terasology.input.RegisterBindButton;
 
 /**
+ * Keybind event for the player to crouch.
  */
 @RegisterBindButton(id = "crouch", description = "${engine:menu#binding-crouch}")
 @DefaultBinding(type = InputType.KEY, id = Keyboard.KeyId.LEFT_CTRL)

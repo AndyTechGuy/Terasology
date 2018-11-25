@@ -24,6 +24,7 @@ import org.terasology.input.RegisterRealBindAxis;
 import org.terasology.input.SendEventMode;
 
 /**
+ * Axis event to move the player forwards and backwards with a controller joystick.
  */
 @RegisterRealBindAxis(id = "forwardsRealMovement", eventMode = SendEventMode.WHEN_CHANGED)
 @DefaultBinding(type = InputType.CONTROLLER_AXIS, id = ControllerId.Y_AXIS)

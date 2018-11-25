@@ -23,6 +23,7 @@ import org.terasology.input.Keyboard;
 import org.terasology.input.RegisterBindButton;
 
 /**
+ * Keybind event for moving the player forwards.
  */
 @RegisterBindButton(id = "forwards", description = "${engine:menu#binding-forwards}")
 @DefaultBinding(type = InputType.KEY, id = Keyboard.KeyId.W)

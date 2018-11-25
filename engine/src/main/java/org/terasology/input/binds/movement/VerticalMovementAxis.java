@@ -21,6 +21,7 @@ import org.terasology.input.RegisterBindAxis;
 import org.terasology.input.SendEventMode;
 
 /**
+ * Axis event for making the player jump and crouch.
  */
 @RegisterBindAxis(id = "verticalMovement", positiveButton = "engine:jump", negativeButton = "engine:crouch", eventMode = SendEventMode.WHEN_CHANGED)
 public class VerticalMovementAxis extends BindAxisEvent {

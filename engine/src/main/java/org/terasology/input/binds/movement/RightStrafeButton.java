@@ -23,6 +23,7 @@ import org.terasology.input.Keyboard;
 import org.terasology.input.RegisterBindButton;
 
 /**
+ * Keybind event to move the player to the right relative to the camera's orientation.
  */
 @RegisterBindButton(id = "right", description = "${engine:menu#binding-right}")
 @DefaultBinding(type = InputType.KEY, id = Keyboard.KeyId.D)

@@ -23,7 +23,7 @@ import org.terasology.input.Keyboard;
 import org.terasology.input.RegisterBindButton;
 
 /**
- * Toggles the display of ChatScreen (through ChatSystem)
+ * Keybind event for toggling the display of ChatScreen (through {@link org.terasology.logic.chat.ChatSystem}).
  */
 @RegisterBindButton(id = "chat", description = "${engine:menu#binding-chat}", category = "general")
 @DefaultBinding(type = InputType.KEY, id = Keyboard.KeyId.T)
