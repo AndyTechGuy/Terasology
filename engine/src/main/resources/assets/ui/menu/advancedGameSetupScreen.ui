@@ -37,7 +37,7 @@
         "type": "UIBox",
         "id": "container",
         "layoutInfo": {
-          "width": 720,
+          "width": 620,
           "position-horizontal-center": {},
           "position-top": {
             "target": "BOTTOM",
@@ -54,11 +54,12 @@
       {
         "type": "ColumnLayout",
         "columns": 2,
+        "column-widths": [0.6, 0.4],
         "verticalSpacing": 16,
-        "horizontalSpacing": 8,
+        "horizontalSpacing": 16,
         "id": "moduleContainer",
         "layoutInfo": {
-          "width": 660,
+          "width": 580,
           "position-horizontal-center": {},
           "position-top": {
             "target": "TOP",
@@ -193,12 +194,12 @@
                     "columns": 4,
                     "column-widths": [
                       0.05,
-                      0.5,
+                      0.45,
                       0.05,
-                      0.5
+                      0.45
                     ],
                     "verticalSpacing": 4,
-                    "horizontalSpacing": -34,
+                    "horizontalSpacing": 4,
                     "contents": [
                       {
                         "type": "UICheckbox",
@@ -399,10 +400,25 @@
                     "offset": 8
                   },
                   "position-bottom": {
-                    "widget": "buttonRow",
+                    "widget": "moduleDetails",
                     "target": "TOP",
                     "offset": 8
                   }
+                }
+              },
+              {
+                "type": "UIButton",
+                "text": "${engine:menu#game-details-module-details}",
+                "id": "moduleDetails",
+                "layoutInfo": {
+                  "position-horizontal-center": {},
+                  "position-bottom": {
+                    "target": "TOP",
+                    "widget": "buttonRow",
+                    "offset": 8
+                  },
+                  "width": 160,
+                  "height": 32
                 }
               },
               {
@@ -441,23 +457,13 @@
         "contents": [
           {
             "type": "UIButton",
-            "text": "${engine:menu#continue}",
-            "id": "continue"
-          },
-          {
-            "type": "UIButton",
             "text": "${engine:menu#start-game}",
             "id": "play"
-          },
-          {
-              "type": "UIButton",
-              "text": "${engine:menu#game-details-module-details}",
-              "id": "moduleDetails"
           }
         ],
         "layoutInfo": {
           "width": 400,
-          "height": 32,
+          "height": 64,
           "position-horizontal-center": {},
           "position-bottom": {
             "target": "BOTTOM",
@@ -470,12 +476,27 @@
         "text": "${engine:menu#back}",
         "id": "close",
         "layoutInfo": {
-          "width": 128,
-          "height": 32,
-          "position-horizontal-center": {},
-          "position-top": {
-            "target": "BOTTOM",
-            "widget": "actionsRow",
+          "width": 180,
+          "height": 100,
+          "position-vertical-center": {},
+          "position-right": {
+            "target": "LEFT",
+            "widget": "container",
+            "offset": 16
+          }
+        }
+      },
+      {
+        "type": "UIButton",
+        "text": "${engine:menu#continue}",
+        "id": "continue",
+        "layoutInfo": {
+          "width": 180,
+          "height": 100,
+          "position-vertical-center": {},
+          "position-left": {
+            "target": "RIGHT",
+            "widget": "container",
             "offset": 16
           }
         }
