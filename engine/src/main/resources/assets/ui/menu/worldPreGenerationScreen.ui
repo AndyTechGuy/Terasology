@@ -173,44 +173,56 @@
         ]
       },
       {
-        "type": "RowLayout",
+        "type": "relativeLayout",
         "id": "actionsRow",
-        "horizontalSpacing": 4,
         "contents": [
           {
             "type": "UIButton",
-            "text": "${engine:menu#continue}",
-            "id": "continue"
+            "text": "Continue to Spawn Preview",
+            "id": "continue",
+            "layoutInfo": {
+              "width": 180,
+              "position-left": {
+                "target": "RIGHT",
+                "widget": "play",
+                "offset": 80
+              }
+            }
           },
           {
             "type": "UIButton",
             "text": "${engine:menu#start-game}",
             "id": "play",
-            "enabled": false
+            "enabled": false,
+            "layoutInfo": {
+              "height": 60,
+              "width": 180,
+              "position-horizontal-center": {},
+              "position-top": {
+                "target": "TOP"
+              }
+            }
+          },
+          {
+            "type": "UIButton",
+            "text": "Return to Universe Setup",
+            "id": "close",
+            "layoutInfo": {
+              "width": 180,
+              "position-right": {
+                "target": "LEFT",
+                "widget": "play",
+                "offset": 80
+              }
+            }
           }
         ],
         "layoutInfo": {
-          "width": 400,
-          "height": 32,
+          "height": 120,
           "position-horizontal-center": {},
           "position-bottom": {
             "target": "BOTTOM",
             "offset": 80
-          }
-        }
-      },
-      {
-        "type": "UIButton",
-        "text": "${engine:menu#back}",
-        "id": "close",
-        "layoutInfo": {
-          "width": 128,
-          "height": 32,
-          "position-horizontal-center": {},
-          "position-top": {
-            "target": "BOTTOM",
-            "widget": "actionsRow",
-            "offset": 16
           }
         }
       }

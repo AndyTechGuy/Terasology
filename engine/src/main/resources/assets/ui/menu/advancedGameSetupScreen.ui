@@ -29,7 +29,7 @@
           "position-top": {
             "target": "BOTTOM",
             "widget": "title",
-            "offset": 36
+            "offset": 16
           }
         }
       },
@@ -180,11 +180,11 @@
                 "family": "AdvanceFilter",
                 "id": "advanceFilter",
                 "layoutInfo": {
-                  "height": 175,
+                  "height": 160,
                   "position-horizontal-center": {},
                   "position-bottom": {
                     "target": "BOTTOM",
-                    "offset": 8
+                    "offset": 4
                   }
                 },
                 "contents": [
@@ -198,7 +198,7 @@
                       0.05,
                       0.45
                     ],
-                    "verticalSpacing": 4,
+                    "verticalSpacing": 1,
                     "horizontalSpacing": 4,
                     "contents": [
                       {
@@ -451,6 +451,102 @@
         ]
       },
       {
+        "type": "RelativeLayout",
+        "contents": [
+          {
+            "type": "UILabel",
+            "text": "Previous: New Game",
+            "layoutInfo": {
+              "use-content-height": true,
+              "position-bottom": {
+                "target": "TOP",
+                "widget": "close"
+              }
+            }
+          },
+          {
+            "type": "UIButton",
+            "text": "${engine:menu#back}",
+            "id": "close",
+            "layoutInfo": {
+              "position-vertical-center": {}
+            }
+          },
+          {
+            "type": "UILabel",
+            "text": "Earlier: Main Menu",
+            "layoutInfo": {
+              "use-content-height": true,
+              "position-top": {
+                "target": "BOTTOM",
+                "widget": "close"
+              }
+            }
+          }
+        ],
+        "layoutInfo": {
+          "width": 180,
+          "height": 120,
+          "position-vertical-center": {
+            "target": "CENTER",
+            "widget": "container"
+          },
+          "position-right": {
+            "target": "LEFT",
+            "widget": "container",
+            "offset": 16
+          }
+        }
+      },
+      {
+        "type": "RelativeLayout",
+        "contents": [
+          {
+            "type": "UILabel",
+            "text": "Next: Universe Setup",
+            "layoutInfo": {
+              "use-content-height": true,
+              "position-bottom": {
+                "target": "TOP",
+                "widget": "close"
+              }
+            }
+          },
+          {
+            "type": "UIButton",
+            "text": "${engine:menu#continue}",
+            "id": "continue",
+            "layoutInfo": {
+              "position-vertical-center": {}
+            }
+          },
+          {
+            "type": "UILabel",
+            "text": "Later: Pregeneration, Preview",
+            "layoutInfo": {
+              "use-content-height": true,
+              "position-top": {
+                "target": "BOTTOM",
+                "widget": "close"
+              }
+            }
+          }
+        ],
+        "layoutInfo": {
+          "width": 180,
+          "height": 120,
+          "position-vertical-center": {
+            "target": "CENTER",
+            "widget": "container"
+          },
+          "position-left": {
+            "target": "RIGHT",
+            "widget": "container",
+            "offset": 16
+          }
+        }
+      },
+      {
         "type": "RowLayout",
         "id": "actionsRow",
         "horizontalSpacing": 4,
@@ -468,36 +564,6 @@
           "position-bottom": {
             "target": "BOTTOM",
             "offset": 80
-          }
-        }
-      },
-      {
-        "type": "UIButton",
-        "text": "${engine:menu#back}",
-        "id": "close",
-        "layoutInfo": {
-          "width": 180,
-          "height": 100,
-          "position-vertical-center": {},
-          "position-right": {
-            "target": "LEFT",
-            "widget": "container",
-            "offset": 16
-          }
-        }
-      },
-      {
-        "type": "UIButton",
-        "text": "${engine:menu#continue}",
-        "id": "continue",
-        "layoutInfo": {
-          "width": 180,
-          "height": 100,
-          "position-vertical-center": {},
-          "position-left": {
-            "target": "RIGHT",
-            "widget": "container",
-            "offset": 16
           }
         }
       }

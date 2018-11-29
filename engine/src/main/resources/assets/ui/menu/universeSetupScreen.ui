@@ -140,11 +140,6 @@
         "contents": [
           {
             "type": "UIButton",
-            "text": "${engine:menu#continue}",
-            "id": "continue"
-          },
-          {
-            "type": "UIButton",
             "text": "${engine:menu#start-game}",
             "id": "play",
             "enabled": false
@@ -163,16 +158,37 @@
       },
       {
         "type": "UIButton",
-        "text": "${engine:menu#back}",
+        "text": "Back to Module Select",
         "id": "close",
         "layoutInfo": {
-          "width": 128,
-          "height": 32,
-          "position-horizontal-center": {},
-          "position-top": {
-            "target": "BOTTOM",
-            "offset": 16,
-            "widget": "actionsRow"
+          "width": 180,
+          "height": 120,
+          "position-vertical-center": {
+            "target": "CENTER",
+            "widget": "mainBox"
+          },
+          "position-right": {
+            "target": "LEFT",
+            "widget": "mainBox",
+            "offset": 16
+          }
+        }
+      },
+      {
+        "type": "UIButton",
+        "text": "Continue to Pregeneration",
+        "id": "continue",
+        "layoutInfo": {
+          "width": 180,
+          "height": 120,
+          "position-vertical-center": {
+            "target": "CENTER",
+            "widget": "mainBox"
+          },
+          "position-left": {
+            "target": "RIGHT",
+            "widget": "mainBox",
+            "offset": 16
           }
         }
       }

@@ -31,8 +31,8 @@
           },
           "position-bottom": {
             "target": "TOP",
-            "widget": "close",
-            "offset": 16
+            "widget": "actionsRow",
+            "offset": 24
           }
         }
       },
@@ -50,8 +50,8 @@
           },
           "position-bottom": {
             "target": "TOP",
-            "widget": "close",
-            "offset": 24
+            "widget": "actionsRow",
+            "offset": 32
           }
         },
         "contents": [
@@ -63,27 +63,48 @@
         ]
       },
       {
-        "type": "UISpace",
-        "id": "close",
-        "layoutInfo": {
-          "width": 128,
-          "height": 32,
-          "position-horizontal-center": {},
-          "position-bottom": {
-            "target": "BOTTOM",
-            "offset": 48
-          }
-        }
-      },
-      {
         "type": "RowLayout",
         "id": "actionsRow",
-        "horizontalSpacing": 4,
+        "horizontalSpacing": 80,
         "contents": [
           {
-            "type": "UIButton",
-            "text": "${engine:menu#back}",
-            "id": "close"
+            "type": "RelativeLayout",
+            "contents": [
+              {
+                "type": "UILabel",
+                "text": "Previous: Pregeneration",
+                "layoutInfo": {
+                  "use-content-height": true,
+                  "position-bottom": {
+                    "target": "TOP",
+                    "widget": "close"
+                  }
+                }
+              },
+              {
+                "type": "UIButton",
+                "text": "${engine:menu#back}",
+                "id": "close",
+                "layoutInfo": {
+                  "position-vertical-center": {}
+                }
+              },
+              {
+                "type": "UILabel",
+                "text": "Earlier: Universe Setup, Module Select",
+                "layoutInfo": {
+                  "use-content-height": true,
+                  "position-top": {
+                    "target": "BOTTOM",
+                    "widget": "close"
+                  }
+                }
+              }
+            ],
+            "layoutInfo": {
+              "width": 180,
+              "height": 120
+            }
           },
           {
             "type": "UIButton",
@@ -92,13 +113,12 @@
           }
         ],
         "layoutInfo": {
-          "width": 400,
-          "height": 32,
+          "width": 440,
+          "height": 120,
           "position-horizontal-center": {},
           "position-bottom": {
             "target": "BOTTOM",
-            "offset": -48,
-            "widget": "container"
+            "offset": 48
           }
         }
       }
